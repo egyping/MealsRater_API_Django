@@ -56,5 +56,6 @@ Heroku > Create new App > meal-rater
     * deploy code to heroku >> use git automatice after push 
 
     * after deploy 
+        heroku git:remote -a mealrater
         heroku run python3 manage.py migrate 
         heroku run python3 manage.py createsuperuser
