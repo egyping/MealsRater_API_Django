@@ -64,7 +64,7 @@ class MealViewSet(viewsets.ModelViewSet):
                     'message': 'Meal Rate Updated',
                     'result': serializer.data
                 }
-                return Response(json , status=status.HTTP_400_BAD_REQUEST)
+                return Response(json , status=status.HTTP_200_OK)
 
             except:
                 # create if the rate not exist 
